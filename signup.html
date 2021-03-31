@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title> Sharma Electronics </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-image: url(bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .box {
+            width: 400px;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #14181a;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.25s;
+        } 
+        .box h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+
+        }
+        
+        .box input[type="text"],
+    .box input[type="password"],
+    .box input[type="radio"]
+    {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #0eeb33;
+        font-size: small;
+        width: 240px;
+        height: 25px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
+    .box h2 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+    }
+
+       .sub{
+        text-decoration: none;
+        width: 40px;
+        display: block;
+        margin: 20px auto;
+        padding: 14px 40px;
+        color: white;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+    .sub:hover {
+        background: #2ecc71;
+    }
+
+    a{
+        text-decoration: underline;
+        color: rgb(37, 79, 219);
+        padding: 10px;
+    }
+    
+    </style>
+</head>
+<body>
+    <form class="box" action="signup.html" method="POST">
+    <h1> Sharma Electronics </h1>
+    <input type="text" name="" placeholder="your name">
+    <input type="text" name="" placeholder="your email">
+    <input type="password" name="" placeholder="enter password">
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male"><h2>Male</h2></label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female"><h2>Female</h2></label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="others"><h2>Other</h2></label>
+    <a class="sub" href="#">submit</a>
+    <br>
+    <br>
+    <span style="color:white;">Already have a Account</span>
+    <a href="login.html">login</a>
+</form>
+    
+</body>
+</html>
